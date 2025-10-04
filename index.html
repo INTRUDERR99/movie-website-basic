@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Movie Website</h1>
+  <a href="login.html">Login</a> | 
+  <a href="watchlist.html">Watchlist</a>
+
+  <div>
+    <select id="genre">
+      <option value="all">All</option>
+      <option value="action">Action</option>
+      <option value="anime">Anime</option>
+    </select>
+    <select id="sort">
+      <option value="none">Sort by Rating</option>
+      <option value="high">High → Low</option>
+      <option value="low">Low → High</option>
+    </select>
+  </div>
+
+  <div id="movies"></div>
+
+  <div id="modal" class="hidden">
+    <div class="box">
+      <span id="close">X</span>
+      <h2 id="m-title">Movie Title</h2>
+      <p id="m-genre">Genre</p>
+      <p id="m-rating">Rating</p>
+      <p id="m-desc">Description</p>
+      <button id="add">Add to Watchlist</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
